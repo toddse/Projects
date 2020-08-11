@@ -30,6 +30,10 @@ public class ProgrammingQuizDemo {
         System.out.println("Correct answers: " + quiz.getTotalCorrect());
         System.out.println("Incorrect answers: " + quiz.getTotalIncorrect());
         System.out.println(quiz.getScore());
-
+        System.out.println("You gave the wrong answer(s) for the following questions:");
+        for (int val: missedQuestion)
+        {
+            System.out.print(val + " ");
+        }
     }
 }
