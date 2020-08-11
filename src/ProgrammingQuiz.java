@@ -38,7 +38,7 @@ public class ProgrammingQuiz {
 
     public StringBuilder getScore()
     {
-        int score = (totalCorrect / solutions.length) * 100;
+        int score = 100 * totalCorrect / solutions.length;
         StringBuilder str = new StringBuilder();
         str.append("Your score is " + score + " percent.");
         return str;
