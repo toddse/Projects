@@ -1,0 +1,17 @@
+The PrintWriter class allows you to write data to a file using the print
+and println methods, as you have been using to display data on the
+screen. 
+Just as with the System.out object, the println method of the PrintWriter
+class will place a newline character after the written data.
+
+The print method writes data without writing the newline character.
+You use the File class and the Scanner class to read data from a file.
+
+Once an instance of Scanner is created, data can be read using the same
+methods that you have used to read keyboard input (nextLine, nextInt,
+nextDouble, etc).
+
+The Scanner class’s hasNext() method will return true if another item
+can be read from the file.
+
+File class’s exists() method determine whether the file exists.
