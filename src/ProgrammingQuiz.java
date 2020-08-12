@@ -6,6 +6,7 @@ public class ProgrammingQuiz {
     private int totalCorrect = 0;
     private int totalIncorrect = 0;
 
+
     public ProgrammingQuiz(char[] s)
     {
         studentAnswers = new char [s.length];
