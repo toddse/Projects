@@ -3,6 +3,7 @@ public class assignment03 {
     public static void main(String[] args) {
         System.out.println("Fibonacci Recursive version: " + rFibonacci(5));
         System.out.println("Fibonacci iterative version: " + iFibonacci(5));
+        System.out.println();
     }
 
     public static int rFibonacci(int n) {
@@ -20,4 +21,4 @@ public class assignment03 {
         }
         return (retValue);
     }
-}//
+}
