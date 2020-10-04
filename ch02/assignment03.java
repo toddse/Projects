@@ -1,15 +1,23 @@
 package ch02;
-import java.util.*;
 public class assignment03 {
     public static void main(String[] args) {
-        System.out.println("Fibonacci Recursive version: " + fibonacci(2));
-        System.out.println();
+        System.out.println("Fibonacci Recursive version: " + rFibonacci(5));
+        System.out.println("Fibonacci iterative version: " + iFibonacci(5));
     }
 
-    public static int fibonacci(int n) {
-        if (n == 1)
+    public static int rFibonacci(int n) {
+        if (n == 0)
             return 1;
         else
-            return fibonacci(n - 2) + fibonacci(n - 1);
+            return rFibonacci(n - 2) + rFibonacci(n - 1);
+    }
+
+    public static int iFibonacci(int n) {
+        int retValue = 1;
+        while (n != 0)
+        {
+            retValue = (retValue - 2) + (retValue - 1);
+        }
+        return (retValue);
     }
 }
